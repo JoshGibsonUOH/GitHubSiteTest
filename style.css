@@ -1,0 +1,131 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    padding: 10px 20px;
+    margin: 0;
+    color: #333;
+}
+
+.main-content {
+    margin-left: 200px; 
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    border-right: 1px solid #eaecef;
+    position: fixed; 
+    top: 75px; /* Align to the top */
+    bottom: 0; /* Stretch to the bottom */
+    left: 0; /* Align to the left */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    height: 100vh; /* Set height to full viewport height */
+    padding-bottom: 80px; /* Extra space at the bottom */
+}
+
+.sidebar .nav-link {
+    color: #333;
+}
+
+/* Hover effect for navigation links */
+.sidebar .nav-link:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+/* Style for active navigation link */
+.sidebar .nav-link.active {
+    background-color: darken(var(--accent-color), 10%);
+    color: darken(var(--accent-color), 10%);
+}
+
+/* Light/Dark Mode Styles */
+body.light-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #343a40;
+    color: #fff;
+}
+
+body.dark-mode .sidebar {
+    background-color: #343a40;
+    border-right: 1px solid #495057;
+}
+
+body.dark-mode .sidebar .nav-link {
+    color: #adb5bd;
+}
+
+body.dark-mode .sidebar .nav-link:hover {
+    background-color: lighten(#343a40, 10%);
+    color: #fff;
+}
+
+body.dark-mode .sidebar .nav-link.active {
+    background-color: darken(#343a40, 10%);
+    color: #fff;
+}
+
+body.dark-mode .header {
+    background-color: #495057;
+    border-bottom: 1px solid #6c757d;
+}
+
+body.dark-mode h1 {
+    color: #fff;
+}
+
+/* Ensure the dark mode styles for the sidebar take precedence */
+body.dark-mode .bg-light {
+    background-color: #292929 !important;
+}
+
+
+/* Style adjustments for the nested navigation links */
+.nav .nav {
+    padding-left: 20px;
+}
+
+/* Accent color */
+:root {
+    --accent-color: #ffa07a; /* pale orange */
+}
+
+a, .btn-outline-secondary {
+    color: var(--accent-color);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+  }
+
+image-fluid {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+}

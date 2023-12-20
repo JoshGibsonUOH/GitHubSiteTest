@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-12">
+                <h1>UOH Computer Science: GitHub Basics</h1>
+            </div>
+        </header>
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="UsingGitHub.html">Using GitHub</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="UsingGitHub.html#About">What is GitHub?</a></li>
+                                <li class="nav-item"><a class="nav-link" href="UsingGitHub.html#Account">Creating a GitHub Account</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubConcepts.html">Git Concepts</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Repository">Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Commits">Commit(s)</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Remote">Remote Repositories</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Branching">Branching</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Merging">Merging</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Conflicts">Conflicts</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Cloning">Cloning</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#FandP">Fetching and Pulling</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Push">Push</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Stashing">Stashing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubDesktop.html">GitHub Desktop Tutorial</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Setup">GitHub Desktop Setup</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#CreateRepo">Creating a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#AccessRepo">Accessing a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#ChangeRepo">Changing a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#TrackChanges">Tracking Repository Changes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Branching">Branching in GitHub Desktop</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Merging">Merging in GitHub Desktop</a></li>                                
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubCmd.html">GitHub Command Line Tutorial</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#Terminal">Opening the Terminal</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#Install">Installing GIT</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#CreateRepo">Creating a Repository on GitHub</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#PushRepo">Pushing to a GitHub Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#BandM">Branching and Merging</a></li>    
+                                <li class="nav-item"><a class="nav-link" href="CheatSheet.html">Cheat Sheet</a></li>                       
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Conflicts.html">Conflicts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ManagementAndCollab.html">Project Management and Collaboration</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Collab">Collaboration</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Projects">Using GitHub Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#AddItem">Adding Items To A Projet</a></li>      
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Issues">Issues</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Features">Other GitHub Project Mangement Features</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Automation">Automating A GitHub Project</a></li>                         
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h2>Git Concepts</h2>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <button class="btn btn-sm btn-outline-secondary" id="toggleTheme">Toggle Light/Dark Mode</button>
+                    </div>
+                </div>
+                <!-- Add more content as needed -->
+                <p>When beginning to use both GIT and GitHub it is likely that you will come across several new terms that you haven’t heard of before. This section will provide an explanation of some of these terms.</p>
+                <p>It is not comprehensive, and there may be some others you come across as you use GIT in the future – but these should be all you need to get started.</p>
+                <h2 id = "Repository">Repository</h2>
+                <p>A repository (often called a repo for short) is a storage space where your project is kept. Repositories differ from normal files and folders due to the fact that they do not only store your files, but they also store important information such as versions, file histories and other relevant data.</p>
+                <p>Due to this structure repositories allow you to do several things that normal file paths do not, including working collaboratively with others on the same project, tracking changes you (or someone else!) has made to a project in detail, or reverting a project back to a previous state if something has gone wrong.</p>
+                <p>Repositories can be stored locally on a machine or storage device, or they can be remote using popular services such as GitHub.</p>
+                <h2 id = "Commits">Commit(s)</h2>
+                <p>A commit in GIT is the saved status of a project at a given time. Similar to a checkpoint in a video game when you complete a commit you are creating something that you can go back to, allowing you to return your project in that exact state should you need to.</p>
+                <p>GIT commits are usually accompanied by a message when they are created, and it is incredibly important that these commit messages are informative and clear – this will help not only you to understand your commits if you need to revisit them in the future, but are also incredibly valuable to other members of your team.</p>
+                <p>“Added a selection of tests that check the add function to ensure that it returns the correct result” is a lot clearer and easier to understand than “Added tests”.</p>
+                <h2 id = "Remote">Remote Repositories</h2>
+                <p>A remote repository is a repository that is hosted somewhere that can be accessed over a network. This is normally on a service like GitHub or GitLab, but creating a remote repository locally or hosting one on a local server is also possible.</p>
+                <h2 id = "Branching">Branching</h2>
+                <p>Branching is one of the key aspects of the source control process used by GIT (with the other being merging).</p>
+                <p>When first adding your project to a GIT repository you are creating your “Main” branch, which is where the stable version of your project exists, meaning that if you were to release your project it would be this “Main” branch that would be released.</p>
+                <p>Branching gives you the ability to create other “branches” based on this branch that you can work on simultaneously. This opens the door to several different things, including allowing teams to collaboratively work on features together, working on new or experimental features without worrying about damaging your core code base or even working on and testing bug fixes.</p>
+                <p>All of this is done without changing the “Main” branch, which means that if something goes wrong, your main project is safe.</p>
+                <p>When a branch has been completed, tested, and you are happy that it can become part of your main project, you can then add it to your “Main” branch – this is known as merging.</p>
+                <p>[A note on the “Main“ branch: previously, the “Main” branch was referred to as the “Master” branch, so when looking at material to do with GIT and GitHub you may see this naming convention come up. These names are interchangeable and effectively do the same thing. You should however use “Main” going forward, as it is the new convention for GIT repositories]</p>
+                <h2 id = "Merging">Merging</h2>
+                <p>Merging is the second key aspect of the source control process implemented by GIT</p>
+                <p>When a branch has been checked and signed off it can then be merged back into the “Main” branch. This takes all the information from your created branch (including things such as commit histories) and adds them into your main branch, making them part of the main program.</p>
+                <h2 id = "Conflicts">Conflicts</h2>
+                <p>GIT can handle the merging process automatically most of the time, however issues can occur when changes have been made to the same part of the program in two different branches (normally by two different people) this results in something called a conflict.</p>
+                <p>When there is a conflict GIT can’t automatically decide which changes should take precedence over another so will not merge the branches until the conflicts have been manually removed. Services like GitHub provide a UI to allow you to do this a bit easier.</p>
+                <p>It is important, especially when working within a team, that you thoroughly check what has been changed before removing conflicts, as it could have unexpected consequences somewhere else in the codebase.</p>
+                <h2 id = "Cloning">Cloning</h2>
+                <p>Cloning a repository is the process of creating a copy locally of a repository that is located remotely.</p>
+                <p>You will most often find yourself doing this when you are cloning a repository from GitHub or other similar services to work on locally on your machine.</p>
+                <h2 id = "FandP">Fetching and Pulling</h2>
+                <p>Both Fetching and pulling serve similar purposes but have one clear difference that you need to be aware of.</p>
+                <p>Fetching will pull down the information about any changes in your remote repository (E.G GitHub) and tell you about them. This is useful for if you want to know at a glance if anything has changed.</p>
+                <p>Fetching, however, will not make any changes to your local repository or branches.</p>
+                <p>Pulling on the other hand is like completing a fetch and then immediately completing a merge straight after. This will make changes to your local repository in the form of updating the branch you are currently working on to include the changes in the corresponding remote version.</p>
+                <h2 id = "Push">Push</h2>
+                <p>A push is when you upload the changes you have made from your local repository up to a remote repository e.g. uploading changes to a repository hosted on GitHub.</p>
+                <h2 id = "Stashing">Stashing</h2>
+                <p>In Git a stash is a temporary box where you can place progress or changes that you have made when you don’t necessarily want to commit them. This could be for a variety of reasons, if they are incomplete or if you need to switch branches for example. It may also be that you have an idea that you may want to return to later but is not yet ready for development.</p>
+                <p>Like when committing to a repository it is important that when creating a stash, you include a clear message explaining what is included in the stash, so if you need to revisit it later you can easily identify what part of the project was being worked on in each stash.</p>
+                
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

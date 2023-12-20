@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-12">
+                <h1>UOH Computer Science: GitHub Basics</h1>
+            </div>
+        </header>
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="UsingGitHub.html">Using GitHub</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="UsingGitHub.html#About">What is GitHub?</a></li>
+                                <li class="nav-item"><a class="nav-link" href="UsingGitHub.html#Account">Creating a GitHub Account</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubConcepts.html">Git Concepts</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Repository">Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Commits">Commit(s)</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Remote">Remote Repositories</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Branching">Branching</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Merging">Merging</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Conflicts">Conflicts</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Cloning">Cloning</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#FandP">Fetching and Pulling</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Push">Push</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Stashing">Stashing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubDesktop.html">GitHub Desktop Tutorial</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Setup">GitHub Desktop Setup</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#CreateRepo">Creating a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#AccessRepo">Accessing a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#ChangeRepo">Changing a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#TrackChanges">Tracking Repository Changes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Branching">Branching in GitHub Desktop</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Merging">Merging in GitHub Desktop</a></li>                                
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubCmd.html">GitHub Command Line Tutorial</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#Terminal">Opening the Terminal</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#Install">Installing GIT</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#CreateRepo">Creating a Repository on GitHub</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#PushRepo">Pushing to a GitHub Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#BandM">Branching and Merging</a></li>      
+                                <li class="nav-item"><a class="nav-link" href="CheatSheet.html">Cheat Sheet</a></li>                          
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ManagementAndCollab.html">Project Management and Collaboration</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Collab">Collaboration</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Projects">Using GitHub Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#AddItem">Adding Items To A Projet</a></li>      
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Issues">Issues</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Features">Other GitHub Project Mangement Features</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Automation">Automating A GitHub Project</a></li>                         
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h2>GitHub: The Basics</h2>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <button class="btn btn-sm btn-outline-secondary" id="toggleTheme">Toggle Light/Dark Mode</button>
+                    </div>
+                </div>
+                <!-- Add more content as needed -->
+                <h2 id = About>What is GitHub?</h2>
+                <p>GitHub is an online content hosting service that allows people to store, manage, share and collaborate on software that they create. It has been owned by Microsoft since 2018 and is one of the largest hosts of source code on the planet.</p>
+                <p>No matter what kind of developer you are, GitHub has several benefits. Some of which will be covered in more detail below. But, at this stage the main aspect of GitHub that you will become familiar with is version control.</p>
+                <p>Version control (sometimes referred to as source control) is the tracking and management of a project throughout its development. This is especially important when multiple people are working on a project at once.</p>
+                <p>With effective version control you can help prevent your project being lost (no more corrupted hard drives the night before hand-in!) and can also make attempted changes or further modifications to a known-working project without worrying that you will not be able to get it back to a working state if something goes wrong.</p>
+                <p>Effective version control also allows multiple developers to work on the same project simultaneously with minimal disruption, which allows you as a developer to complete tasks more quickly and effectively. GitHub has been built from the ground up to support this process, therefore has several tools to make this process as easy as possible. But before you begin to use them, you must first create a GitHub account (it’s free!)</p>
+                <h2 id = Account>Creating a GitHub Account</h2>
+                <p>Before you can begin to use GitHub features you must first create an account, to do this follow the steps shown below.</p>
+                <h3>Step One:</h3>
+                <p>Navigate to: https://github.com/</p>
+                <h3>Step Two:</h3>
+                <p>Navigate to the “sign up” button, located on the top right-hand side of the screen. (Shown by the red rectangle in the image below)</p>
+                <p><img src="Images/UsingGitHub/001.png" alt="The GitHub Toolbar with a red circle around the &quot;Sign Up&quot; button" title="The GitHub Toolbar"></p>
+                <h3>Step Three:</h3>
+                <p>Follow the sign-up step-by-step sign-up process that is provided by the website.</p>
+                <p>It is important as this point that you sign up using your University E-Mail. This will ensure that all your university work is accessible in a place that is easy for you to locate and will be recoverable if you forget your account details.</p>
+                <p>A completed sign-up form should look something like this.</p>
+                <p><img src="Images/UsingGitHub/002.png" alt="A completed sign up form on the GitHub website" title="Completed Sign-Up Form"></p>
+                <p>Complete the CAPATCHA at the bottom of the page and press create account to complete the sign up.</p>
+                <h3>Step Four:</h3>
+                <p>The final step in the account creation process is to verify your account. The GitHub website will ask you for something called a “launch code” that will be used for this.</p>
+                <p>Navigate to your e-mail and you should have received a message from GitHub (it may show in the “Other” section of your e-mails.)</p>
+                <p>Complete the steps covered in the e-mail and your account set up should be complete. You will now be able to log in if GitHub does not automatically redirect you.</p>
+                <h2></h2>
+
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

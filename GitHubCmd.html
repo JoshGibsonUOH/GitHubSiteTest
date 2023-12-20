@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-12">
+                <h1>UOH Computer Science: GitHub Basics</h1>
+            </div>
+        </header>
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="UsingGitHub.html">Using GitHub</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="UsingGitHub.html#About">What is GitHub?</a></li>
+                                <li class="nav-item"><a class="nav-link" href="UsingGitHub.html#Account">Creating a GitHub Account</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubConcepts.html">Git Concepts</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Repository">Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Commits">Commit(s)</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Remote">Remote Repositories</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Branching">Branching</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Merging">Merging</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Conflicts">Conflicts</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Cloning">Cloning</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#FandP">Fetching and Pulling</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Push">Push</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Stashing">Stashing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubDesktop.html">GitHub Desktop Tutorial</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Setup">GitHub Desktop Setup</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#CreateRepo">Creating a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#AccessRepo">Accessing a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#ChangeRepo">Changing a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#TrackChanges">Tracking Repository Changes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Branching">Branching in GitHub Desktop</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Merging">Merging in GitHub Desktop</a></li>                                
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubCmd.html">GitHub Command Line Tutorial</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#Terminal">Opening the Terminal</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#Install">Installing GIT</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#CreateRepo">Creating a Repository on GitHub</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#PushRepo">Pushing to a GitHub Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#BandM">Branching and Merging</a></li>      
+                                <li class="nav-item"><a class="nav-link" href="CheatSheet.html">Cheat Sheet</a></li>                          
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Conflicts.html">Conflicts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ManagementAndCollab.html">Project Management and Collaboration</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Collab">Collaboration</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Projects">Using GitHub Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#AddItem">Adding Items To A Projet</a></li>      
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Issues">Issues</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Features">Other GitHub Project Mangement Features</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Automation">Automating A GitHub Project</a></li>                         
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h2>Using GitHub in the command line</h2>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <button class="btn btn-sm btn-outline-secondary" id="toggleTheme">Toggle Light/Dark Mode</button>
+                    </div>
+                </div>
+                <!-- Add more content as needed -->
+                <h3 id = "Terminal">Opening The Terminal</h3>
+                <p>The following section includes the command line methods of how to use Git and GitHub for source control, this is a more advanced implementation of Git and is not essential for your assignment. But if you wish to know how it works, please read on below.</p>
+                <p>As mentioned previously, GIT commands and using GitHub can also be achieved by using a command line.</p>
+                <p>For the purpose of this tutorial, we are going to use PowerShell through the Windows Terminal as our CLI to use GIT, mainly because it’s the default on Windows 11 but most CLIs will work just as well. To access the Terminal from windows, press the Start/Windows button and perform a search for the Terminal using the search bar at the bottom of the screen. (If the search bar does not appear begin typing with the start menu open and the search will start automatically)</p>
+                <p><img src="Images/GitHubCmd/001.jpg" alt="An image showing the word terminal in the search bar" title="Windows search bar"></p>
+                <p>Then application for the command prompt should appear at the top of the window, click on this to open the PowerShell application.</p>
+                <p><img src="Images/GitHubCmd/002.jpg" alt="An image showing the terminal icon in the start menu" title="Terminal start menu"></p>
+                <p>If correctly done the Terminal window should open and you should see a screen that contains a flashing white cursor.</p>
+                <p><img src="Images/GitHubCmd/003.jpg" alt="An image showing the terminal default screen" title="Windows Terminal"></p>
+                <h3 id = "Install">Checking GIT is installed</h3>
+                <p>If you are using a university machine, Git should already be installed and ready to use on your system. If you are not, and you haven't installed it previously, then you will need to install it yourself before you can begin to use Git in the command line.</p>
+                <p>To check if you already have Git installed, in PowerShell write the command:</p>
+                <p><code>git version</code></p>
+                <p>If The Terminal returns information about your Git install, then you currently have access to use Git on your PC. If it returns the following error:</p>
+                <p><img src="Images/GitHubCmd/004.jpg" alt="An image showing the powershell git install response" title="Terminal GIT Response"></p>
+                <p>Then you need to ensure that Git is installed on your machine. If you already have a valid Git install you can progress to the “Creating a repository” page. Otherwise:</p>
+                <p>To download Git, visit the following link: https://git-scm.com/download/win</p>
+                <p>Select the option at the top of the page to download the latest version of git and wait for the download to finish.</p>
+                <p><img src="Images/GitHubCmd/005.jpg" alt="and image showing the GIT download link on GITS webpage" title="Download link for GIT"></p>
+                <p>When the download has completed run the installer and install the software using your desired preferences. When you reach the PATH environment window it is recommended that you keep it to the default value provided. Choosing to run git from the command line and third-party software.</p>
+                <p><img src="Images/GitHubCmd/006.jpg" alt="An image showing the GIT setup" title="GIT Setup"></p>
+                <p>You should also choose the option to use the bundled OpenSSH.</p>
+                <p><img src="Images/GitHubCmd/007.jpg" alt="An image showing the GIT setup" title="GIT Setup"></p>
+                <p>And select to use the OpenSSL library for your HTTPS connections.</p>
+                <p><img src="Images/GitHubCmd/008.jpg" alt="An image showing the GIT setup" title="GIT Setup"></p>
+                <p>Select that you wish to checkout Windows style in the next window.</p>
+                <p><img src="Images/GitHubCmd/009.jpg" alt="An image showing the GIT setup" title="GIT Setup"></p>
+                <p>In the next window select that you wish to use the default windows console window.</p>
+                <p><img src="Images/GitHubCmd/010.jpg" alt="An image showing the GIT setup" title="GIT Setup"></p>
+                <p>Keep the “Git pull” data to its default behaviour.</p>
+                <p><img src="Images/GitHubCmd/011.jpg" alt="An image showing the GIT setup" title="GIT Setup"></p>
+                <p>Keep the Git credential manager at its default value.</p>
+                <p><img src="Images/GitHubCmd/012.jpg" alt="An image showing the GIT setup" title="GIT Setup"></p>
+                <p>Keep enable file system caching turned on.</p>
+                <p><img src="Images/GitHubCmd/013.jpg" alt="An image showing the GIT setup" title="GIT Setup"></p>
+                <p>Leave both experimental features off.</p>
+                <p><img src="Images/GitHubCmd/014.jpg" alt="An image showing the GIT setup" title="GIT Setup"></p>
+                <p>Finally, click install to start the installation process.</p>
+                <p>Reopen the command prompt and type <code>git</code>, if you get a response like the one below GIT has been installed correctly</p>
+                <p><img src="Images/GitHubCmd/015.jpg" alt="An image showing the terminal response when GIT has been installed successfully" title="Successful GIT install"></p>
+                <h3 id = "CreateRepo">Creating A Repository</h3>
+                <p>Before we can create our new repository, we much first tell the command line the folder that we are going to save it in. To do this we must use the command:</p>
+                <p><code>cd [path to repo folder]</code></p>
+                <p>After pressing enter you will notice that your command prompt has changed to represent that you are now in that folder.</p>
+                <p>Now we are in the correct folder we can create our repo; we do this by using the command:</p>
+                <p><code>git init</code></p>
+                <p>The command line will then inform your that a new Git repo has been created within the folder you previously navigated into.</p>
+                <p><img src="Images/GitHubCmd/016.jpg" alt="An image showing the GIT initialization response" title="Local GIT Initialized"></p>
+                <p>This newly created repository is a local repository that exists on your current machine. In order for you to push this repository on to GitHub you also need to create a repository on GitHub that it can be pushed into.</p>
+                <p>Navigate to <a href="www.github.com">www.github.com</a> and log in using your GitHub Credentials.</p>
+                <p>The first screen you see after you log in is the GitHub dashboard, from here we are going to create a new repository. On the left-hand side of the dashboard, you should be able to see a list of all of the repositories that you have created so far.</p>
+                <p>Press the green “New” button which is visible at the top of that list to create a new repository.</p>
+                <p><img src="Images/GitHubCmd/017.jpg" alt="An image showing the new repository button on GitHub" title="New Repository"></p>
+                <p>Alternatively, if your dashboard doesn’t have a repository list, or you are struggling to find it, from the dashboard select your icon on the right-hand side of the screen, this will be represented by a selection of coloured squares that are unique to you:</p>
+                <p><img src="Images/GitHubCmd/018.jpg" alt="An image showing the users GitHub icon" title="GitHub Icon"></p>
+                <p>Click on the icon and then select “Your repositories” from the drop-down menu.</p>
+                <p><img src="Images/GitHubCmd/019.jpg" alt="An image showing the GitHub Your Repositories Dropdown" title="Your Repositories"></p>
+                <p>This will redirect you to the repositories screen, which has the same green “new” button at the top right-hand side of the screen:</p>
+                <p><img src="Images/GitHubCmd/020.jpg" alt="An image showing the new repository button on GitHub" title="New Repository"></p>
+                <p>Using either of these links will redirect you to the create a repository screen.</p>
+                <p>Fill in the create a new repository screen with the following information:</p>
+                <ul>
+                <li>Repository template: No template</li>
+                <li>Owner: Select yourself from the dropdown box</li>
+                <li>Repository name: Set to GitHubTutorialCLI</li>
+                <li>Description: A basic repository for the University of Hull GitHub tutorial</li>
+                <li>Set the repository to private (this means that only you will be able to access it)</li>
+                <li>Select the add a README file checkbox</li>
+                <li>Set Git Ignore to Visual Studio</li>
+                <li>Leave license on “None”</li>
+                </ul>
+                <p>When you have completed the above the create a repository page should look like it does below (minus the different owner):</p>
+                <p><img src="Images/GitHubCmd/021.jpg" alt="An image showing the new repository dialog screen on GitHub" title="Create a New Repository"></p>
+                <p>When you have done this press the green “Create Repository” button to continue, you should be redirected to your completed repository that will look like the following image:</p>
+                <p><img src="Images/GitHubCmd/022.jpg" alt="An image showing the created repository on GitHub" title="Created Repository"></p>
+                <h3 id = "PushRepo">Pushing to GitHub</h3>
+                <p>Now you have created a local repository, and an online GitHub repository that can hold your program the next step is to create a link between your local repository and the one on GitHub, this will allow you to push your local changes to GitHub when you have completed them.</p>
+                <p>When you have created the creation of your repository on GitHub you then need to navigate back to the console and enter the following command:</p>
+                <p><code>git remote add origin [link to your GitHub repository here]</code></p>
+                <p>This tells git the online repository that we are looking to use throughout the process.</p>
+                <p>Before we can begin pushing information from our local repository into the GitHub one, we first need to get the information that GitHub generated when it created the repo, including the repo and readme file.</p>
+                <p>To do this enter the following command:</p>
+                <p><code>git pull origin main</code></p>
+                <p>and press enter.</p>
+                <p class = "alert alert-danger" role="alert"><strong>Note</strong> you may find that you receive the following error informing you that it will not let you merge unrelated history's, this can often happen if you already have files in your repo - to fix this rerun the command with --allow-unrelated-histories added, this will allow you to merge the information from GitHub into the repo you created.</p>
+                <p>A prompt so sign into GitHub may appear on the screen, log in with your GitHub details so that it can get access to the repo.</p>
+                <p><img src="Images/GitHubCmd/023.jpg" alt="An image showing the GitHub sign in screen when accessed from the Terminal" title="GitHub sign in"></p>
+                <p>Click sign in with your browser and you will be redirected to a window asking if you wish to authorise this application – you may need to log in if you have not already.</p>
+                <p><img src="Images/GitHubCmd/024.jpg" alt="An image showing the GitHub Credentials Authorization manager screen" title="Credentials Authorization"></p>
+                <p>Click the authorize button and will be redirected to enter your password again to confirm, when completed you should get a prompt to show your authorisation is completed.</p>
+                <p><img src="Images/GitHubCmd/025.jpg" alt="An image showing the authorization successful screen" title="authorization successful"></p>
+                <p>The GitHub specific information (which in this case is just the Readme) will then be cloned into your previously created local repo.</p>
+                <p><img src="Images/GitHubCmd/026.jpg" alt="An image showing a GIT Pull in the terminal" title="Git Pull in terminal"></p>
+                <p>Now you have linked your local repository to your GitHub one, and pulled down the programs generated you can now push a program up to GitHub – so lets create one!</p>
+                <p>Open visual studio and create a new project, the project can be anything you like (you can just stick with the default console template if you want) but make sure you set its location as the folder you created for your GitHub repository:</p>
+                <p><img src="Images/GitHubCmd/027.jpg" alt="An image showing the Visual Studio create a project screen" title="Create a project"></p>
+                <p>When completed your folder should contain both the files you downloaded from GitHub previously and your recently created program.</p>
+                <p><img src="Images/GitHubCmd/028.jpg" alt="An image showing the folder structure after a project is created" title="Create project folders"></p>
+                <p class = "alert alert-danger" role="alert"><strong>Note:</strong> It should be noted that you can do this in reverse if you wish, you can create a program and then turn its folder into a local repository that can then be connected to GitHub. You do not have to create the repository first.</p>
+                <p>Now you have created a program you need to tell your local git repository that you want to add the newly created files to it, you can do this by entering the command:</p>
+                <p><code>git status</code></p>
+                <p><img src="Images/GitHubCmd/029.jpg" alt="An image showing GIT Status in the terminal" title="GIT Status"></p>
+                <p>This will return a list of files that git picks up within the repository that has been created. And should look like the image below.</p>
+                <p>As the response suggests git can find your new file within the repository but they are currently “untracked” – which is why it shows in red.</p>
+                <p>Git will only manage a file that it has been specifically told to track, so, like the response from the command prompt suggests we need to do this manually. To do this use the command:</p>
+                <p><code>git add .</code></p>
+                <p class = "alert alert-danger" role="alert"><em><strong>Note:</strong> this command adds all untracked files and folders to the repository - if you only wish to add individual files to the commit you can do so by writing git add and then the name of the file – including its extension - e.g. git add testfile.txt</em></p>
+                <p>This will add everything in the folder to the stage, meaning that it is now managed by GIT.</p>
+                <p>View the status again and you will now see the files are being picked up by GIT within the repository.</p>
+                <p><img src="Images/GitHubCmd/030.jpg" alt="An image showing the Terminal picking up newly added files" title="New files in the terminal"></p>
+                <p>You will notice not only that they are shown in green to show that they are being tracked, but also that each individual file in the folder is shown, not just the overall folder itself.</p>
+                <p>Now Git is picking up our now files we need to commit them so that they are saved to the repository.</p>
+                <p>We do this by using the command: <code>git commit –m “A message about the commit here”.</code></p>
+                <p>This tells git that we are committing the files it currently has on the stage. The message you add here should be clear show exactly what changes you are making to the repository.</p>
+                <p>When you have written the command and the message press enter and the command line will update to inform you that the files you added have been committed to the repository.</p>
+                <p><img src="Images/GitHubCmd/031.jpg" alt="An image showing a program being commited to GIT in the terminal" title="Project Commit"></p>
+                <p>Currently, the repository only exists locally, and if we want to push our changes to GitHub there are a few more steps that we need to complete.</p>
+                <p>At this stage, you should currently have a local repository that has files within it that you have committed.</p>
+                <p>Before we upload our repository to GitHub, we first need to make some changes within the PowerShell window to ensure that our local repository matches up with GitHub structure.</p>
+                <p>To achieve this, we need to enter the following command: <code>git branch -m master main</code> - this ensures the name of our &quot;main&quot; branch follows the naming conventions used by GitHub.</p>
+                <p>Entering this command may not give any response from within PowerShell - this is completely normal.</p>
+                <p>After changing our &quot;main&quot; branch behaviour we must then push our repository to GitHub. We can do this by using the: <code>Git push –u origin main</code> command.</p>
+                <p>Press enter, this is the command that tells GitHub that we want to push the repository we have created to the GitHub repository provided earlier.</p>
+                <p>The command line should update, informing you that the local data has been pushed to the GitHub repository.</p>
+                <p><img src="Images/GitHubCmd/032.jpg" alt="An image showing a repository being pushed" title="Repository Push"></p>
+                <p>This can also be checked by revisiting the online version of the GitHub repository and ensuring that the locally committed files are there.</p>
+                <p><img src="Images/GitHubCmd/033.jpg" alt="An image showing the newly committed files in GitHub" title="Committed Files"></p>
+                <p>If the files in your GitHub repository reflect the ones in your local one, then the process was completed successfully - you can now repeat this process every time you wish to make changes to your repo.</p>
+                <h3 id = "BandM">Branching and Merging Using The Command Line</h3>
+                <p>Like in GitHub desktop, branches can also be created and managed using the command line.</p>
+                <p>To create a branch first tun the command:</p>
+                <p><code>Git checkout –b nameofthebranch</code></p>
+                <p>This will create a new branch and immediately move us into it. We can confirm the creation of our new branch by writing the git branch command, which will list all of the branches that currently exist.</p>
+                <p><img src="Images/GitHubCmd/034.jpg" alt="An image showing a created branch in the terminal" title="New branch"></p>
+                <p>The Asterix (*) and colour green shows the branch that you are currently working on.</p>
+                <p>Open your program and make some changes to it – for the purpose of this demo I am going to add a simple loop that will count to 100 – but you can do anything you like!</p>
+                <p>Now we have created a branch and made some changes to it we need to push it to GitHub so that it can be accessed from anywhere.</p>
+                <p>To do this we go through the same process or staging, committing and pushing we did previously. The only change being that we push to the branch we created using:</p>
+                <p>Press enter. As it did previously the command line will update to show that the branch has been pushed to GitHub, similar to below:</p>
+                <p><img src="Images/GitHubCmd/035.jpg" alt="An image showing the commit and push process for a new branch" title="Committing and pushing a branch"></p>
+                <p>Once again, we can go to GitHub to ensure that the branch has been pushed successfully.</p>
+                <p><img src="Images/GitHubCmd/036.jpg" alt="An image showing the newly pushed to branch on GitHub" title="Pushed branch on GitHub"></p>
+                <p>Now you have created a branch and pushed to it you now need to merge it back into your main program. From the branches window select “new pull request” and you will be redirected to the pull request wizard.</p>
+                <p>The first thing you will notice is that the branch we are currently working on can be automatically merged, as shown by the prompt at the top of the page.</p>
+                <p><img src="Images/GitHubCmd/037.jpg" alt="An image showing the branch can be automatically merged prompt on GitHub" title="Branch Can Be Automatically Merged"></p>
+                <p>The reason for this is that we are only adding to our repository, we haven’t changed or deleted anything that could stop our project from working based on something that someone else is working on, which would cause a conflict.</p>
+                <p>Underneath you will notice a Name and Description that will accompany your pull request. As when pushing it is vital that these fields are easy to understand and make it clear what is present within the branch, as someone else may be checking the code that is being merged and may need some clear information.</p>
+                <p><img src="Images/GitHubCmd/038.jpg" alt="An image showing the pull request details screen on GitHub" title="Pull request screen"></p>
+                <p>Do not create your pull request yet! First scroll down and you will be able to see all the changes that are being made to the repository. You will notice that these items look very similar to the GitHub desktop interface when are a pushing changes to our project, with items that are highlighted in green representing items that have been added to the repository.</p>
+                <p><img src="Images/GitHubCmd/039.jpg" alt="An image showing the details of code being changed in a pull request" title="Pull request changes"></p>
+                <p>When you have finished looking through your changes scroll back to the top of the screen and press the “create pull request” button. This will create a Pull Request that tells GitHub you wish to merge this project into your main branch.</p>
+                <p>You will then be relocated to the Pull Requests window which shows information about the request you have just made and gives you the ability to add it to your project.</p>
+                <p>As mentioned previously as this file makes no changes that clash with the existing project it can be merged automatically, and GitHub will remind us of this here.</p>
+                <p><img src="Images/GitHubCmd/040.jpg" alt="An image showing the no conflicts notification in GitHub" title="No Conflicts"></p>
+                <p>If you are happy with the outcome of this Pull Request, then you can click the “Merge Pull Request” button.</p>
+                <p>The button will then change to a confirmation to ensure that you wish to make this decision, click the “Confirm merge” button to commit your branch to the main repository.</p>
+                <p>When this has been completed the UI will change to purple to show that a branch has been merged.</p>
+                <p><img src="Images/GitHubCmd/041.jpg" alt="An image showing the successful merge request prompt" title="Successful Merge Request"></p>
+                <p>If this is the case then the branch has been merged, and you are now safe to press the “Delete branch” button to remove the branch from your project.</p>
+                <p>It is then good practice to write a comment underneath showing that you have merged and closed the branch.</p>
+                <p>When all is completed, your screen should look like this, showing a timeline of the branch being added, merged and then deleted.</p>
+                <p><img src="Images/GitHubCmd/042.jpg" alt="An image showing the merge in the Project timeline" title="Merge in project timeline"></p>
+                <p>When this has been completed navigate back to the main page of your repository, you should be able to see that the changes from your branch have been added.</p>
+                <p>When a branch has been merged into a project using GitHub we then need to update our local version of the repository to reflect this.</p>
+                <p>To do this we must first switch back to the main branch in the command line, we do this using the command:</p>
+                <p><code>git checkout main</code></p>
+                <p>Now we are back in the main branch we can update it using the pull command we used earlier</p>
+                <p><code>git pull</code></p>
+                <p>This will update the main branch we are currently working on and the command line will change to reflect this:</p>
+                <p><img src="Images/GitHubCmd/043.jpg" alt="An image showing swapping to the main branch and updating in the terminal" title="Branch switch and update"></p>
+                <p>Congratulations – you can now branch and merge using the command line!</p>
+
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

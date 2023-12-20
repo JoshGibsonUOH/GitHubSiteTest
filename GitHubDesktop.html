@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-12">
+                <h1>UOH Computer Science: GitHub Basics</h1>
+            </div>
+        </header>
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="UsingGitHub.html">Using GitHub</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="UsingGitHub.html#About">What is GitHub?</a></li>
+                                <li class="nav-item"><a class="nav-link" href="UsingGitHub.html#Account">Creating a GitHub Account</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubConcepts.html">Git Concepts</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Repository">Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Commits">Commit(s)</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Remote">Remote Repositories</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Branching">Branching</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Merging">Merging</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Conflicts">Conflicts</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Cloning">Cloning</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#FandP">Fetching and Pulling</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Push">Push</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Stashing">Stashing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubDesktop.html">GitHub Desktop Tutorial</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Setup">GitHub Desktop Setup</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#CreateRepo">Creating a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#AccessRepo">Accessing a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#ChangeRepo">Changing a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#TrackChanges">Tracking Repository Changes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Branching">Branching in GitHub Desktop</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Merging">Merging in GitHub Desktop</a></li>                                
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubCmd.html">GitHub Command Line Tutorial</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#Terminal">Opening the Terminal</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#Install">Installing GIT</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#CreateRepo">Creating a Repository on GitHub</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#PushRepo">Pushing to a GitHub Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#BandM">Branching and Merging</a></li>   
+                                <li class="nav-item"><a class="nav-link" href="CheatSheet.html">Cheat Sheet</a></li>                             
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Conflicts.html">Conflicts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ManagementAndCollab.html">Project Management and Collaboration</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Collab">Collaboration</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Projects">Using GitHub Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#AddItem">Adding Items To A Projet</a></li>      
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Issues">Issues</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Features">Other GitHub Project Mangement Features</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Automation">Automating A GitHub Project</a></li>                         
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h2>Using GitHub with GitHub Desktop</h2>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <button class="btn btn-sm btn-outline-secondary" id="toggleTheme">Toggle Light/Dark Mode</button>
+                    </div>
+                </div>
+                <!-- Add more content as needed -->
+                <h2 id = "Setup">GitHub Desktop Setup</h2>
+                <p>Before setting up and using GitHub desktop you must first ensure you have registered for a GitHub account: If you haven’t yet done so follow the tutorial found here: [TODO; In Web, Link]</p>
+                <p>Once you are fully registered you can follow the below steps to setup and use GitHub Desktop.</p>
+                <h3>Step One:</h3>
+                <p>Navigate to https://desktop.github.com/ and press the Download for Windows button displayed on the page.</p>
+                <p><img src="Images/GitHubDesktop/001.jpg" alt="An image showing the GitHub Desktop Splash Screen" title="GitHub Desktop Splash Screen"></p>
+                <h3>Step Two:</h3>
+                <p>Go to the location you downloaded the file to and run the executable file.</p>
+                <p><img src="Images/GitHubDesktop/002.jpg" alt="An image showing the downloaded GitHub Desktop program" title="GitHub Desktop Download"></p>
+                <p>When the program has finished installing GitHub desktop will automatically launch.</p>
+                <h3>Step Three:</h3>
+                <p>When prompted, click the button that says; “sign in to GitHub.com” and sign into your recently created University GitHub account.</p>
+                <p><img src="Images/GitHubDesktop/003.jpg" alt="An image showing the GitHub Desktop Login" title="GitHub Desktop Login"></p>
+                <p>Depending on how your PC is setup, and if you are currently logged into GitHub different things may happen, including:</p>
+                <ul>
+                <li>A login prompt opening in a different browser to the one you already use (this usually happens if Microsoft Edge is set as a default browser)</li>
+                <li>A login prompt opening in your current browser</li>
+                <li>An automatic redirection to the authorization screen.</li>
+                </ul>
+                <p>All these alternatives result in the same outcome – you just need to be sure to log in using your University GitHub details as normal, if you are currently logged in to your personal GitHub in your browser you may need to log out and log in again using your university account.</p>
+                <p>When logged in you may see a window like the one below:</p>
+                <p><img src="Images/GitHubDesktop/004.jpg" alt="An image showing the GitHub Desktop Authorization Screen" title="GitHub Desktop Authorization"></p>
+                <p>Click the big green “Authorize Desktop” button to allow GitHub desktop to link to your account.</p>
+                <p>You may be presented with a security prompt, this is completely normal, and you are free to press open.</p>
+                <p><img src="Images/GitHubDesktop/005.jpg" alt="An image showing the GitHub Desktop Security Prompt" title="GitHub Desktop Security Prompt"></p>
+                <p>When this is completed the GitHub desktop app will automatically refresh and will open a new window asking you to configure Git either by using your GitHub account name and e-mail address or by configuring it manually. Leave this at the default setting and after ensuring the account you are logging into is the correct one, press the finish button.</p>
+                <p><img src="Images/GitHubDesktop/006.jpg" alt="An image showing the Configure Git Screen" title="Configure GitHub Desktop"></p>
+                <p>You will then be redirected to the GitHub desktop application and are free to begin creating repositories.</p>
+                <h3 id = "CreateRepo">Creating a repository</h3>
+                <p>For more information on what repositories (and other git features) are, visit the “GitHub Concepts” section <a href="GitHubConcepts.html">here</a></p>
+                <p>Now you have access to the GitHub desktop application, you can begin to create repos that we can manage using GitHub. Your main desktop screen should look like the image shown below.</p>
+                <p><img src="Images/GitHubDesktop/007.jpg" alt="An image showing the GitHub Desktop Start Screen" title="GitHub Desktop Start Screen"></p>
+                <p>We are going to start by creating a new local repository, which means it will be saved on the PC we are currently on. We do this by clicking the “Create a New Repository on your hard drive” button.</p>
+                <p><img src="Images/GitHubDesktop/008.jpg" alt="An image showing the Create Repository Button" title="Create Repository Button"></p>
+                <p>When you click this button, a new window that should look like the one below will appear.</p>
+                <p><img src="Images/GitHubDesktop/009.jpg" alt="An image showing the Create a new repository screen" title="Create Repository Screen"></p>
+                <p>Within this form do the following:</p>
+                <p>Set repository name to be “My First Repository”</p>
+                <p>Set the description to be “This is my first repository!”</p>
+                <p>Press the “Choose” Button(<img src="Images/GitHubDesktop/010.jpg" alt="An image showing the choose button" title="Choose Button">) to the right of “local path” and navigate to your documents folder. I would strongly suggest creating a folder within your documents called “Repos” or “Repositories” to keep your repos in an easily accessible place.</p>
+                <p class = "alert alert-danger" role="alert"><strong>Note</strong> GitHub can only create repositories in folders that do not currently have files within them, so if you are going to create more repositories in the future you should create a folder that will hold them within your repos folder.</p>
+                <p>Click the “Initialize this repository with a README” check box, whilst this isn’t vital at this point it is good practice for the future.</p>
+                <p>For now, leave both “Git ignore and License” on their default “None” setting.</p>
+                <p>When you have completed all the above your Create a new repository box should look the same as the one below (although your local path should be different!)</p>
+                <p><img src="Images/GitHubDesktop/011.jpg" alt="An image showing the Create a new repository Window" title="Create a new repository window"></p>
+                <p>If you are happy with your inputs press the “Create repository” (<img src="Images/GitHubDesktop/012.jpg" alt="Create repository button" title="Create repository button">) button to create your repository locally.</p>
+                <p>After clicking this button, you will realize that the GitHub desktop window has changed and has brought you inside your repository. Like the screenshot below.</p>
+                <p><img src="Images/GitHubDesktop/013.jpg" alt="An image showing the Repository Screen" title="The repository screen"></p>
+                <p>There’s a lot going on here, and we will cover all of it eventually, but for now we are going to focus on things specific to uploading our repository for the first time.</p>
+                <p>In the top left-hand corner, there is a section called “Current repository”</p>
+                <p><img src="Images/GitHubDesktop/014.jpg" alt="An image showing the current repository screen" title="The current repository"></p>
+                <p>As we just created it, we have been automatically placed into the “My-First-Repository” repository, but in the future if you are making changes to a repository make sure the correct one is selected in the top left hand corner.</p>
+                <p>In the middle of the screen, you can see we have various options, the one we are going to focus on first is the “View the files of your repository in explorer” option.</p>
+                <p><img src="Images/GitHubDesktop/015.jpg" alt="An image showing the Show in Explorer window" title="Show in explorer window"></p>
+                <p>This will allow us to view the repo that we have just created on our machine. You can use the shortcut provided by GitHub in future if you wish but for the purpose of this demonstration press the “Show in Explorer” (<img src="Images/GitHubDesktop/016.jpg" alt="An image showing the Show explorer button" title="Show in explorer button">) button.</p>
+                <p>This will open up the repo that you have just created in file explorer. Which should only have two files in it.</p>
+                <p><img src="Images/GitHubDesktop/017.jpg" alt="An image showing the GitHub files in the folder structure" title="Folder structure with files"></p>
+                <p>Only basic for now, but over times repos can get very complicated! Checking the file structure of a repo before uploading it is a good way of checking to make sure that everything looks correct, and that you aren’t missing any important files or folders.</p>
+                <p>Now we have created our new repo, and checked its contents, we need to push it to GitHub so it can be accessed online, to do this click the “Publish repository” (<img src="Images/GitHubDesktop/018.jpg" alt="An image showing the Publish Repository button" title="Publish Repository button">) button that is visible on the top right-hand side of the screen.</p>
+                <p>Pressing this button will bring up another dialog box, that allows you to confirm the settings you entered previously. And set the privacy and organization that your repo is going to belong to (if any)</p>
+                <p><img src="Images/GitHubDesktop/019.jpg" alt="An image showing the Publish repository dialog box" title="Publish Repository dialog box"></p>
+                <p>For now, leave all of the settings set by GitHub desktop as default, and press the blue “Publish repository” (<img src="Images/GitHubDesktop/020.jpg" alt="An image showing the blue publish repository button as part of the dialog" title="Blue publish repository button">) button at the bottom of the window.</p>
+                <p>GitHub desktop will load for a few seconds, and load back into the repository overview window, although this time a new option will be added “Open the repository page on GitHub in your browser.”</p>
+                <p><img src="Images/GitHubDesktop/021.jpg" alt="An image showing the GitHub desktop open repository prompt." title="Open Repository Prompt"></p>
+                <p>Use the shortcut to open your repo in the browser, or alternatively press the “View on GitHub” (<img src="Images/GitHubDesktop/022.jpg" alt="An image showing the view on GitHub button" title="View on GitHub button">) button.</p>
+                <p>Your PC should open a browser window and you should be able to see the repo you just created visible on the GitHub website, like the image below:</p>
+                <p><img src="Images/GitHubDesktop/023.jpg" alt="An image showing a repository on GitHub" title="GitHub repository window"></p>
+                <p>If this worked, well done! You have just created your first GitHub repo using GitHub desktop.</p>
+                <h3 id = "AccessRepo">Accessing A Repository</h3>
+                <p>Ok! So now we have managed to be able to create a repository of our own locally and upload it to GitHub the next step is to find a repository on GitHub and make it accessible locally on our PC.</p>
+                <p>This is useful for various reasons, the first of which is collaborative working, as you may be joining a project after it’s inception, meaning that the repo that has been created. Or you may wish to use a tool, library or code that someone else has made to help you in a project that you are creating, in order to do this, you will need to create a local version of it that you can access.</p>
+                <p>To access a repository that already exists we must first navigate to the correct section in GitHub desktop. To do this we need to click File -&gt; Clone Repository (alternatively you can use the CTRL+SHIFT+O shortcut)</p>
+                <p><img src="Images/GitHubDesktop/024.jpg" alt="An image showing the GitHub Desktop File dropdown" title="GitHub desktop File Dropdown"></p>
+                <p><img src="Images/GitHubDesktop/025.jpg" alt="An image showing the Clone a repository Window" title="Clone a repository window"></p>
+                <p>After accessing you will notice that the “Clone a Repository” window opens which gives you various options that you can access, the first of which are your current repos that exist on GitHub’s servers – this may only be GitHub-Lab1 for you if this is the first time you have accessed this, or you may have several repos present if you have been using Git for a while.</p>
+                <p>This is useful for if we wish to access our Repo on a new device, we haven’t used it on before, allowing us to make a local copy, that we can display for others to test, or if we wish to make changes in a different environment, updating the server version when we have finished and making them accessible from anywhere – but more on this later!</p>
+                <p>For the purpose of this tutorial, you are going to create a local version of repository that I have created for you.</p>
+                <p>To do this you must click on the URL button that is present at the top of the Clone a repository window (<img src="Images/GitHubDesktop/026.jpg" alt="An image showing the URL button" title="URL Button">), which will take you to the clone a repository from URL window.</p>
+                <p><img src="Images/GitHubDesktop/027.jpg" alt="An image showing the Clone a repository Window" title="Clone a repository window"></p>
+                <p>From here we first need to enter the URL of the GitHub repository that we wish to clone. For the purpose of this lab the URL you need is:</p>
+                <p>https://github.com/JoshGibsonUOH/GitHubTutorial</p>
+                <p>You should then create a folder named Lab 1” within your previously created local repos folder and alter the “Local Path” field to point towards it.</p>
+                <p><img src="Images/GitHubDesktop/028.jpg" alt="An image showing the Create a new repository Window" title="Create a new repository window"></p>
+                <p>and then click the clone button (<img src="Images/GitHubDesktop/029.jpg" alt="An image showing the blue clone button" title="The blue clone button">)</p>
+                <p>If done correctly the UI will update to display that the repository is being cloned. And you will then be redirected to the familiar GIT repo window that appeared when you created your first repo, but you will notice that your current Repository is now “GitHubTutorial”</p>
+                <p>Open the folder that contains the files to ensure that the repo has cloned properly, and you should see a folder alongside the files generated by GIT.</p>
+                <p><img src="Images/GitHubDesktop/030.jpg" alt="An image showing the folder structure after the repository had been cloned" title="The cloned repository"></p>
+                <p>If you see these, well done! You’ve cloned your first repository.</p>
+                <h3 id = "ChangeRepo">Making Changes To A Repository</h3>
+                <p>As you have probably identified, the first repository you created doesn’t actually include any code – so let’s add some!</p>
+                <p>Navigate to the repo that you cloned in the previous section, and within it you will once again see the cloned folders:</p>
+                <p><img src="Images/GitHubDesktop/030.jpg" alt="An image showing the folder structure after the repository had been cloned" title="The cloned repository"></p>
+                <p>We are going to take the three items below, and copy them into the “My First Repository” repository you created previously.</p>
+                <p><img src="Images/GitHubDesktop/031.jpg" alt="An image showing the three files that need to be copied" title="The files to copy"></p>
+                <p>When completed your “My First Repository” repo should look the same as the image below in file explorer</p>
+                <p><img src="Images/GitHubDesktop/032.jpg" alt="An image showing the folder structure of the first repository folder after the files have been copied" title="Folder after files are copied"></p>
+                <p>Re-open GitHub desktop and you will be greeted with a whole host of new data, as the application has recognized that the folder has changed and has listed all the changes for you.</p>
+                <p><img src="Images/GitHubDesktop/033.jpg" alt="An image showing the folder structure after the repository had been cloned" title="The cloned repository"></p>
+                <p>These are all of the indiviual files that were present within our “GitHub Console Project” folder. Files that are new to your repo are represented with a green plus sign(<img src="Images/GitHubDesktop/034.jpg" alt="An image showing a green plus sign" title="A green plus sign">)</p>
+                <p>If these files have source code that can be viewed, you can click on them and the UI will update showing what changes are going to be made. You can have a click through them all if you like but for the purpose of this demonstration we are going to scroll to the bottom of the list and view “Program.CS”.</p>
+                <p><img src="Images/GitHubDesktop/035.jpg" alt="An image showing program.cs in GitHub desktop" title="Program.cs"></p>
+                <p>New changes to the repo are highlighted in green. As we are adding a whole new folder to the project everything is highlighted in green – but this will change in the future!</p>
+                <p>Now we have added our program to our local file we need to push it to our GitHub repository and add it to the one that is saved within GitHub itself.</p>
+                <p>To do this we need to navigate to the bottom left hand corner and the boxes that say “summary and description”</p>
+                <p><img src="Images/GitHubDesktop/036.jpg" alt="An image showing the uncompleted summary and description box" title="Unfinished summary and description box"></p>
+                <p>In the summary box we are going to write an overview of what we have just added to our project, and in the description box provide a bit more detail.</p>
+                <p>It is vitally important that you get used to doing this – and doing this well.</p>
+                <p>Commits should clearly identify what was changed at a glance, and should be easily understandable to anyone who is accessing the project for the first time. This will not only help collaborators on your project but also future you, you may be coming back to look at a project after time away.</p>
+                <p>In the Summary box we are going to write “Added GitHub Console Project To Repo”</p>
+                <p>And in the description “Moved the GitHub Console Project folder into the My-First-Repository Repo to view changes in behaviour”</p>
+                <p>Description automatically generatedWhen completed your changes should look like the this:</p>
+                <p><img src="Images/GitHubDesktop/037.jpg" alt="An image showing the completed summary and description box" title="finished summary and description box"></p>
+                <p>When you are satisfied click the commit to main (<img src="Images/GitHubDesktop/038.jpg" alt="An image showing the commit to main button" title="Commit to main button">) button and this will update GitHub desktop and tell it that locally this is our most up to date version of our project.</p>
+                <p>The changes will disappear from the UI (as they now aren’t changes, they’ve been committed to the project) and the UI will refresh and tell us that we have commits that are waiting to be committed to our origin file on GitHub – so lets do this!</p>
+                <p>On the toolbar at the top of the window you will notice that the “Publish Repository” button that we used previously has been replaced with a “Push Origin” button (<img src="Images/GitHubDesktop/039.jpg" alt="An image showing the push origin button" title="Push origin button">) that will push our changes to GitHub and make them accessible online.</p>
+                <p>Press the button and allow the GitHub desktop application to make the changes, when they are complete the “Push Origin” button will be replaced with one that says “Fetch Origin”
+                (<img src="Images/GitHubDesktop/040.jpg" alt="An image showing the fetch origin button" title="Fetch origin button">) when this happens you know the upload process has been complete.</p>
+                <p>Reopen the project in the browser and you should see the updated project with the GitHub tutorial project file included. Like the image below.</p>
+                <p><img src="Images/GitHubDesktop/041.jpg" alt="An image showing the GitHub repository with changes made" title="Changed GitHub Repository"></p>
+                <h3 id = "TrackChanges">Tracking Changes in a repo</h3>
+                <p>In windows explorer navigate to your My-First-Repository repo and open the project in Visual Studio.</p>
+                <p>Edit the code in any wat you like, add things, delete things, make your console have a different foreground and background colour, the possibilities are endless!</p>
+                <p>When you have completed this process, and your code looks completely different save your changes and return to the GitHub desktop application.</p>
+                <p>You will notice that GitHub Desktop has automatically picked up the changes, and you are seeing some new symbols.</p>
+                <p>A red minus sign next to a change(<img src="Images/GitHubDesktop/042.jpg" alt="An image showing a red minus sign" title="red minus sign">)means that a file has been removed from a project. And an orange circle next to a change (<img src="Images/GitHubDesktop/043.jpg" alt="An image showing an orange circle sign" title="Orange circle sign">) means that a file has been edited.</p>
+                <p>Navigate again to “Program.cs” and depending on how you wrote your program you should see some changes.</p>
+                <p>Lines of code that are highlighted in red have been removed from the program.</p>
+                <p>Lines of code that are highlighted in green still represent items that are new to the program.</p>
+                <p>Commit your changes to your GitHub repository, make sure you use a clear and well defined summary and description that show what changes you have made.</p>
+                <p>We have now made two changes to the same repository, and GitHub desktop makes it easy to look back over these changes.</p>
+                <p>From the main repo overview screen, alter the window that shows your changes to show change history by clicking the history button (<img src="Images/GitHubDesktop/044.jpg" alt="An image showing a button with the label history" title="The history button">) located at the top of the window.</p>
+                <p>If you have done this correctly it should look like the window below:</p>
+                <p><img src="Images/GitHubDesktop/045.jpg" alt="An image showing GitHub desktop showing repository changes" title="Repository changes"></p>
+                <p>As you may have noticed the commits are named using the summaries you used when committing them and the descriptions are visible at the top of each commit, this is one of the reasons that it is so important to ensure that these commits are named clearly and are easy to understand, imagine having to sort through 200 of these to find something specific and they are all named a variation of “commit #002”.</p>
+                <p>You may have also been introduced to a new symbol, a blue arrow (<img src="Images/GitHubDesktop/046.jpg" alt="An image showing a blue arrow sign" title="Blue arrow symbol">) this means that an item has been renamed.</p>
+                <p>If you’ve reached this point that means you can now add to, and track changes in a repo – well done!</p>
+                <h3>Reverting Changes</h3>
+                <p>Oh no! you’ve got too fancy with your colour choices and have broken your program and want to change this back.</p>
+                <p>Do not worry! We can do this using GitHub desktop.</p>
+                <p>From the history menu you accessed in the previous section navigate to your most recent commit, and right click on it, you will be greeted with a selection menu within it. Click “Revert changes in commit” to remove your changes.</p>
+                <p><img src="Images/GitHubDesktop/047.jpg" alt="An image showing the dropdown that contains revert changes" title="revert changes dropdown"></p>
+                <p>After pressing this you will notice that a commit has been added to the history section that represents the removal of the commit you made earlier.</p>
+                <p><img src="Images/GitHubDesktop/048.jpg" alt="An image showing the revert changes commit" title="Revert changes commit"></p>
+                <p>A black and white screen with white text</p>
+                <p>Description automatically generated</p>
+                <p>Also, the “Push Origin” button (<img src="Images/GitHubDesktop/049.jpg" alt="An image showing the pushy origin button" title="The push origin button">) at the top of the screen is also once again available to be used.</p>
+                <p>Press the “Push Origin” button to make your changes to your GitHub repository.</p>
+                <p>Access the web version of GitHub as previously and you should see that the removal of the commit has now been completed. If you wish to double check this you can navigate to the “Program.CS” by using the folder structure on the GitHub website to see if it back to the original. It should look similar to the one below:</p>
+                <p><img src="Images/GitHubDesktop/050.jpg" alt="An image showing program.cs on GitHub" title="Program CS on GitHub"></p>
+                <p>Furthermore, your local version will also automatically update. Navigate to your repo folder and reopen your “GitHub Tutorial” solution.</p>
+                <p>You should see that the code has reverted back to it’s original solution, like below.</p>
+                <p><img src="Images/GitHubDesktop/051.jpg" alt="An image showing program.cs locally" title="Program CS locally"></p>
+                <p>Also don’t worry if you change your mind – you can always revert the revert!</p>
+                <h2>Branching in GitHub desktop</h2>
+                <h3>Git Ignores</h3>
+                <p>As we are now going to be going through the process of using branching and merging effectively in our project now is a good time to introduce the topic of the Git Ignore system and why we use it.</p>
+                <p>Git ignore files (shown as .gitignores) are files that specify certain files from your current working directory that will be ignored by the git service you are using when completing commits.</p>
+                <p>Git Ignore files usually consist of machine generated files such as build artifacts or temporary files and logs generated when testing. These files are not needed by the main project repository and can take up unnecessary space whilst also making the committing process more complicated.</p>
+                <p>GitHub desktop has a selection of common Git Ignore files that you can add into your document when creating a repository. You can do this by selecting the required Git Ignore when you’re creating a repository.</p>
+                <p>When in the Create a new repository wizard click the “Git ignore” dropdown and you will see a list of the pre-installed Git Ignored that come installed with GitHub desktop.</p>
+                <p><img src="Images/GitHubDesktop/052.jpg" alt="A Git ignore dropdown on GitHub desktop" title="Git ignores"></p>
+                <p>For C# programs we want to use the “Visual Studio” Git Ignore, scroll down and find “Visual Studio” in the list and click on it. This will ensure the correct files are not uploaded when you push commits. When you have done this it should close the dropdown and the  Git ignore file you chose should appear in its place.</p>
+                <p><img src="Images/GitHubDesktop/053.jpg" alt="A selected git ignore on GitHub desktop" title="Selected git ignore"></p>
+                <p>You are then free to create your repository as normal.</p>
+                <p>To ensure your Git Ignore file has been added as expected, view your repo in windows explorer begore you push it up to GitHub. You should be able to see the Git Ignore file.</p>
+                <p><img src="Images/GitHubDesktop/054.jpg" alt="A Git ignore file within the folder structure" title="git ignore in folder"></p>
+                <p>If you are using Unity to create a project (or other engines) ensure that you have chosen the requisite Git Ignore file to go with them, as if you don’t these programs can struggle with source control which may affect your project. GitHub desktop provides inbuilt Git Ignored for Unity, Unreal and Godot which should all be used.</p>
+                <h3 id = "Branching">Branching</h3>
+                <p>Create a new Git repository called “Branch Testing” using GitHub desktop and push it to GitHub</p>
+                <p>When your repository is created and visible in GitHub desktop the next step is to create a new branch that you are going to work on. In order to do this, navigate to the top of the screen and click the “Current branch” (<img src="Images/GitHubDesktop/055.jpg" alt="An image showing the current branch in GitHub desktop" title="Current Branch">) button.</p>
+                <p>This will open a new window that allows you to create a new branch as well as viewing the ones that are already active. The window should look like the one below.</p>
+                <p><img src="Images/GitHubDesktop/056.jpg" alt="An image the branch management tool in GitHub Desktop" title="Branch management"></p>
+                <p>To create a new branch click the “New branch” button(<img src="Images/GitHubDesktop/057.jpg" alt="An image showing the new branch button" title="New branch button"> )</p>
+                <p>A new window should pop up asking you to name your new branch:</p>
+                <p><img src="Images/GitHubDesktop/058.jpg" alt="An image showing the create a branch tool" title="Create a branch tool"></p>
+                <p>Name your branch “Adding Counter” and press the “Create branch” (<img src="Images/GitHubDesktop/059.jpg" alt="An image showing the blue create branch button" title="Blue crete branch button"> ) button to add the branch to your project.</p>
+                <p>You will be redirected back to the repository window and on first glance it will not look like much has changed. But on further investigation you will see that your current branch has changed from “Main” to “Adding-Counter”.</p>
+                <p><img src="Images/GitHubDesktop/060.jpg" alt="An image showing the change of current branch in the GitHub desktop UI" title="Branch change in the UI"></p>
+                <p>This means that any changes you make (or add) will be added to the branch and <em>not</em> the main repository.</p>
+                <p>Before we begin to make changes to our branch, similar to when we create a new repository, we need to publish the branch to GitHub so it is accessible from everywhere and not only on the local device, we do this in exactly the same way that we normally would a repository, by pressing the “Publish branch” (<img src="Images/GitHubDesktop/061.jpg" alt="An image showing the publish branch button" title="Publish branch button"> ) button.</p>
+                <p>To check your branch has been published successfully press the “View on GitHub button” (<img src="Images/GitHubDesktop/062.jpg" alt="An image showing the view on GitHub button" title="View on GitHub Button"> ) from inside GitHub desktop or press the shortcut keys (Ctrl+Shift+G). This will take you to your repository on the GitHub website.</p>
+                <p>You may be greeted with a prompt that asks if you would like to project your Main branch:</p>
+                <p><img src="Images/GitHubDesktop/063.jpg" alt="An image of the asking if the user wants to protect their branch on GitHub" title="protect this branch prompt"></p>
+                <p>I would strongly suggest doing this by pressing the “Protect this branch” (<img src="Images/GitHubDesktop/064.jpg" alt="An image of the protect this branch button" title="protect this branch button"> ) button.</p>
+                <p>This will redirect you to a window with multiple options that you can use to protect your branch, that looks like the one below:</p>
+                <p><img src="Images/GitHubDesktop/065.jpg" alt="An image of the branch protection options on GitHub" title="branch protection options"></p>
+                <p>What you wish to do with these settings may differ in the future, depending on how you (or your team) like to set out your workflow, for now we are just going to tick “Require a pull request before merging” (<img src="Images/GitHubDesktop/066.jpg" alt="An image of the pull request before merging button on GitHub" title="Pull request before merging option"> ) keeping the options to their defaults and press the “Create” (<img src="Images/GitHubDesktop/067.jpg" alt="An image of a green create button" title="Create button"> ) button.</p>
+                <p>You will then be asked to enter your password and confirm. Do this and you will be redirected back to the settings and your branch protection rules will be added.</p>
+                <p>When you have done this click the name of your repository at the top of the screen and you will be returned back to the main repository screen:</p>
+                <p><img src="Images/GitHubDesktop/068.jpg" alt="An image of the main GitHub repository window" title="Main GitHub repository window"></p>
+                <p>From the main repository screen navigate to the section that says branches above the information about your repo and click on it.</p>
+                <p><img src="Images/GitHubDesktop/069.jpg" alt="An image showing the branch selection window on GitHub" title="Branch selection"></p>
+                <p>This would redirect you to a screen that lists all of your branches, if you added the “Adding Counter” branch successfully earlier you should be able to see it listed here, like the screenshot below:</p>
+                <p><img src="Images/GitHubDesktop/071.jpg" alt="An image of the different branches in GitHub" title="Branches list"></p>
+                <p>If your branches section looks like this, then congratulations! You just made your first branch.</p>
+                <h3 id = "Merging">Merging in GitHub desktop</h3>
+                <p>Now we have created our branch the next step is to complete a merge back into our project. To do this we must first make some changes to our branch.</p>
+                <p>Create a program inside of your local GitHub repository that counts from 0 to 100 and commit that repository to your branch.</p>
+                <p>Now we have completed some code in our program that we know works we are free to merge that back into our master branch. To do this we must first create a pull request.</p>
+                <p>To do this from inside GitHub desktop go back into the branches window by clicking on the “Current branch” (<img src="Images/GitHubDesktop/072.jpg" alt="An image showing the curent branch button in GitHub dekstop" title="Current Branch button">) button at the top of the screen.</p>
+                <p>When the branch management window opens change the selection at the top of the screen from “branches” to “pull requests” by clicking on the appropriate button.</p>
+                <p><img src="Images/GitHubDesktop/073.jpg" alt="An image showing the branches and pull request toggle in GitHub desktop" title="Branch and pull request toggle"></p>
+                <p>From inside the “Pull Requests” window you should then click the “Create A Pull Request” option which will then redirect you to the GitHub website.</p>
+                <p><img src="Images/GitHubDesktop/070.jpg" alt="An image showing the create a pull request window in GitHub desktop" title="Create a pull request"></p>
+                <p>The pull request window will be displayed which contains a lot of information about the branch that we are currently attempting to merge.</p>
+                <p>The first thing you will notice is that the branch we are currently working on can be automatically merged, as shown by the prompt at the top of the page.</p>
+                <p><img src="Images/GitHubDesktop/074.jpg" alt="An image showing the automatic merge prompt on GitHub" title="Automatic merge"></p>
+                <p>The reason for this is that we are only adding to our repository, we haven’t changed or deleted anything that could stop our project from working.</p>
+                <p>Underneath that you will notice a Name and Description that will accompany your pull request. If you added these when you pushed to your branch (which you should!) these values will be populated for you.</p>
+                <p>As when pushing it is vital that these fields are easy to understand and make it clear what is present within the branch, as someone else may be checking the code that is being merged and may need some clear information.</p>
+                <p><img src="Images/GitHubDesktop/075.jpg" alt="An image showing the create a pull request dialog boxes on GitHub" title="Create a pull request"></p>
+                <p>Do not create your pull request yet! First scroll down and you will be able to see all of the changes that are being made to the repository. You will notice that these items look very similar to the GitHub desktop interface when are a pushing changes to our project, with items that are highlighted in green representing items that have been added to the repository.</p>
+                <p><img src="Images/GitHubDesktop/076.jpg" alt="An image showing the create a pull request changes on GitHub" title="Pull Request changes"></p>
+                <p>When you have finished looking through your changes scroll back to the top of the screen and press the “create pull request” (<img src="Images/GitHubDesktop/077.jpg" alt="An image showing the green create pull request button" title="Create a pull request button">) button. This will create a Pull Request that tells GitHub you wish to merge this project into your main branch.</p>
+                <p>You will then be relocated to the Pull Requests window which shows information about the request you have just made, and gives you the ability to add it to your project.</p>
+                <p>As mentioned previously as this file makes no changes to the existing project it can be merged automatically, and GitHub will remind us of this here.</p>
+                <p><img src="Images/GitHubDesktop/078.jpg" alt="An image showing the no merge conflicts branch" title="No conflicts"></p>
+                <p>If you are happy with the outcome of this Pull Request, then you can click the “Merge Pull Request” (<img src="Images/GitHubDesktop/079.jpg" alt="An image showing the green merge pull request button" title="merge a pull request button">) button.</p>
+                <p>The button will then change to a confirmation to ensure that you wish to make this decision, click the “Confirm merge” (<img src="Images/GitHubDesktop/080.jpg" alt="An image showing the green confirm merge button" title="Confirm merge button">) button to commit your branch to the main repository.</p>
+                <p>When this has been completed the UI will change to purple to show that a branch has been merged.</p>
+                <p><img src="Images/GitHubDesktop/081.jpg" alt="An image showing the successful pull request prompt" title="Successful pull request"></p>
+                <p>If this is the case then the branch has been merged, and you are now safe to press the “Delete branch” (<img src="Images/GitHubDesktop/082.jpg" alt="An image showing the delete branch button" title="Delete branch">) button to remove the branch from your project.</p>
+                <p>It is then good practice to write a comment underneath showing that you have merged and closed the branch.</p>
+                <p>When all is completed, your screen should look similar to this, showing a timeline of the branch being added, merged and then deleted.</p>
+                <p><img src="Images/GitHubDesktop/083.jpg" alt="An image showing the branch timeline" title="Branch timeline"></p>
+                <p>When this has been completed navigate back to the main page of your repository, you should be able to see that the changes from your branch have been added.</p>
+                <p><img src="Images/GitHubDesktop/084.jpg" alt="An image showing the repository after a merge" title="Merged repository"></p>
+                <p>You’ve just merged your first branch – well done! However, what happens if we make some changes to our program?</p>
+                <p>As our program has now changed within the main branch, we need to update our program to ensure that our local version is the same as the one on GitHub.</p>
+                <p>To do this within GitHub desktop we first have to press the “Fetch Origin” (<img src="Images/GitHubDesktop/085.jpg" alt="An image showing the fetch origin button in GitHub desktop" title="Fetch Origin">) button which will check the main branch to see if any changes have been made.</p>
+                <p>GitHub desktop should then find some changes and let you know they don’t exist on your machine, to get access to these changes press the “Pull Origin” (<img src="Images/GitHubDesktop/086.jpg" alt="An image showing the pull origin button in GitHub desktop" title="Pull origin">) button which will have changed from “Get Origin” this will download the changes and make changes to them on your machine so that you have the latest version of the project.</p>
+
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

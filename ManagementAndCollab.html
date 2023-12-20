@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-12">
+                <h1>UOH Computer Science: GitHub Basics</h1>
+            </div>
+        </header>
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="UsingGitHub.html">Using GitHub</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="UsingGitHub.html#About">What is GitHub?</a></li>
+                                <li class="nav-item"><a class="nav-link" href="UsingGitHub.html#Account">Creating a GitHub Account</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubConcepts.html">Git Concepts</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Repository">Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Commits">Commit(s)</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Remote">Remote Repositories</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Branching">Branching</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Merging">Merging</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Conflicts">Conflicts</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Cloning">Cloning</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#FandP">Fetching and Pulling</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Push">Push</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Stashing">Stashing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubDesktop.html">GitHub Desktop Tutorial</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Setup">GitHub Desktop Setup</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#CreateRepo">Creating a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#AccessRepo">Accessing a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#ChangeRepo">Changing a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#TrackChanges">Tracking Repository Changes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Branching">Branching in GitHub Desktop</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Merging">Merging in GitHub Desktop</a></li>                                
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubCmd.html">GitHub Command Line Tutorial</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#Terminal">Opening the Terminal</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#Install">Installing GIT</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#CreateRepo">Creating a Repository on GitHub</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#PushRepo">Pushing to a GitHub Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#BandM">Branching and Merging</a></li>  
+                                <li class="nav-item"><a class="nav-link" href="CheatSheet.html">Cheat Sheet</a></li>                              
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Conflicts.html">Conflicts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ManagementAndCollab.html">Project Management and Collaboration</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Collab">Collaboration</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Projects">Using GitHub Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#AddItem">Adding Items To A Projet</a></li>      
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Issues">Issues</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Features">Other GitHub Project Mangement Features</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Automation">Automating A GitHub Project</a></li>
+                                                        
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1>Project Management and Collaboration using GitHub</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <button class="btn btn-sm btn-outline-secondary" id="toggleTheme">Toggle Light/Dark Mode</button>
+                    </div>
+                </div>
+                <!-- Add more content as needed -->
+                <h3 id = "Collab">Collaboration:</h3>
+                <p>Throughout your development career you will find multiple occasions within which you need to work collaboratively on a project. This could be a personal project that you are working on with friends, or an assignment that you need to complete for your degree. GitHub provides you with the inbuilt functionality to add collaborators to your repository and allow you to work as a team.</p>
+                <p>Collaborators are added to a GitHub project using the browser version of the service. Log into your account a navigate to the repository that you wish to work on with other people.</p>
+                <p>When you have done this, you must then click on the settings tab that is visible at the top of the screen.</p>
+                <p><img src="Images/ManagaementAndCollab/001.jpg" alt="An image showing the main GitHub Repository Screen" title="GitHub Repository"></p>
+                <p>Then, from the settings screen, choose “collaborators” from the left-hand side menu.</p>
+                <p><img src="Images/ManagaementAndCollab/002.jpg" alt="An image showing the GitHub settings screen" title="GitHub Settings"></p>
+                <p>From the collaborators screen select the large button in the middle of the screen that says “add people”</p>
+                <p><img src="Images/ManagaementAndCollab/003.jpg" alt="An image showing the main GitHub collaborators screen" title="GitHub Collaborators"></p>
+                <p>Pressing this will open up the add collaborator window, in this Windows you can type the GitHub username, full name or e-mail address of the person you would like to collaborate with – and GitHub will populate the search box with everyone who meets your search criteria.</p>
+                <p><img src="Images/ManagaementAndCollab/004.jpg" alt="An image showing Add a collaborator screen on GitHUb" title="Add a collaborator"></p>
+                <p>When you have found the person that you would like to add to your repository click on them, and the UI will update asking if you would like to add them to your repository.</p>
+                <p>Click the “Add (Username) to this repository” button to add the person you have searched for as one of your collaborators.</p>
+                <p><img src="Images/ManagaementAndCollab/005.jpg" alt="An image showing the add a collaborator screen with a collaborator selected on GitHub" title="Add a collaborator"></p>
+                <p>This will send an invitation to the user your have added to your repository asking if they would like to collaborate and if they accept they will gain access to your repository and be able to collaborate with you.</p>
+                <p>Once you have added your collaborator the user interface will update to show them as part of your repository, with the “add people” button being moved to the top right-hand side of the screen.</p>
+                <p><img src="Images/ManagaementAndCollab/006.jpg" alt="An image showing the main GitHub collaborators screen" title="GitHub Collaborators"></p>
+                <h2 id = "Projects">Using GitHub Projects:</h2>
+                <p>In the last few months, GitHub have released a big update to their project management and collaboration tools. The new tools that GitHub have released are not only aimed at making project management more accessible but also to merge it with GitHub actions to automate the process.</p>
+                <p>Projects have several different use cases, and aren’t necessarily something that only benefits developers who are working as a team. Projects can be used as an individual to help manage work and keep in touch with things such as bugs, and deadlines.</p>
+                <h3>Creating a Project</h3>
+                <p>Projects don’t necessarily need to be created as part of a repository. If you would like to just create a project for testing, or for potentially adding to a repository in the future you can do so by visiting www.github.com/projects and following the steps below.</p>
+                <p>However, for the purpose of this tutorial we are going to add a project directly into our repository.</p>
+                <p>From the main repository view, select the “Projects” tab at the top of the screen:</p>
+                <p><img src="Images/ManagaementAndCollab/007.jpg" alt="An image showing the main GitHub Repository Screen" title="GitHub Repository"></p>
+                <p>This will redirect you to the “projects” screen which will look like the one below:</p>
+                <p><img src="Images/ManagaementAndCollab/008.jpg" alt="An image showing the main GitHub Projects Screen" title="GitHub Projects"></p>
+                <p>Select the arrow next to the “link a project” button (this is the button you would use if you wanted to link a project you had created previously) and select “new project”. Then press the newly changed “new project” green button.</p>
+                <p><img src="Images/ManagaementAndCollab/009.jpg" alt="An image showing the link a projects drop down in GitHub" title="Link Project Dropdown"></p>
+                <p>You will then be redirected to the create a project Wizard, which will look similar to the screenshot below:</p>
+                <p><img src="Images/ManagaementAndCollab/010.jpg" alt="An image showing the GitHub Choose a project type screen" title="Project Types"></p>
+                <p>There are a lot of options to choose from here, but for our sake we are going to choose the “Kanban” template provided in the featured templates tab, which will create us a Kanban board. (If it is not available entering kanban into the search templates menu should bring it up) You can do this by highlighting over the name of the template and clicking on it.</p>
+                <p>A Kanban board is a project management tool that can be used to visualize the work tasks needed to be currently completed within a project. Popular project management tools such a Trello use Kanban boards as their project management structure.</p>
+                <p>Kanban boards consist of a large bank of tasks that need to be completed for a project to be considered complete. Each member of a team (or an individual) takes a task from the bank when they are working on it which moves it into an “in progress” state and then finally to a “completed” state until a task is done, with another task being taken from the bank. There is no limit to how many states a project can be in, but common ones within a Kanban board include the task bank, in progress, completed and on hold.</p>
+                <p>Once you have selected Kanban the screen will change to provide you with an overview of the project you have selected, and allow you to give it a name, enter a name of your choice and press “Create Project” to create your first project.</p>
+                <p><img src="Images/ManagaementAndCollab/011.jpg" alt="An image showing the create a project screen on GitHub" title="GitHub Create a Project"></p>
+                <p>Your project will then refresh and show you your newly created Kanban board.</p>
+                <p><img src="Images/ManagaementAndCollab/012.jpg" alt="An image showing a new Kanban Board in GitHub Projects" title="New Kanban Board"></p>
+                <h2>Adding Items to a Project</h2>
+                <h3 id = "AddItem">Adding Tasks</h3>
+                <p>Before you begin to add tasks into your project, we are first going to remove the limit on the number of tasks you are allowed in each section of your Kanban board.</p>
+                <p>To do this, press the three dots at top of the individual section (in this case we are going to use “Backlog” a menu should appear).</p>
+                <p><img src="Images/ManagaementAndCollab/013.jpg" alt="An image showing the backlog section of a Github project with its dialog menu open" title="Backlog menu"></p>
+                <p>“From here, press “Set Limit” and remove the value from the box that appears (or add any number you would prefer)</p>
+                <p><img src="Images/ManagaementAndCollab/014.jpg" alt="An image showing the set limit screen in GitHub Project" title="Set Column Limit"></p>
+                <p>Press Save, and you will now be able to add as many tasks as you want to your board! Feel free to do this in the rest of the columns if you wish.</p>
+                <h3 id = "Issues">Issues</h3>
+                <h4>What are issues?</h4>
+                <p>GitHub issues are items that are created in a repository, about that repository. Issues can be used for several different purposes, including tracking bugs, requesting features and managing tasks.</p>
+                <p>To keep GitHub projects as integrated as possible with the rest of their ecosystem, GitHub have chosen to make tasks the same as issues, so that any issues that are attached to a project become a task to solve.</p>
+                <p>You can add issues to a project yourself or wait for users of your project to add them for you.</p>
+                <p>Going forward when using the word “issue” it can be interchanged with the word “task” as they both represent the same thing in this context.</p>
+                <h4>Adding Issues to a GitHub Project</h4>
+                <p>From your main project screen, look at the bottom of your individual Kanban sections and you should see they all contain a section that says “add item” – for this example we are going to use the backlog section.</p>
+                <p><img src="Images/ManagaementAndCollab/015.jpg" alt="An image showing the backlog section of a GitHub project in its entirety" title="Backlog Section"></p>
+                <p>After clicking add item the button will update, telling you to type the name of your issue.</p>
+                <p><img src="Images/ManagaementAndCollab/016.jpg" alt="An image showing the GitHub Project name an issue prompt" title="Name an issue"></p>
+                <p>Write the name of a task you would like to add to your Kanban board and press enter to confirm. For the purpose of this demonstration, I’m going to call the task “Create Kanban Board” but you can call it whatever you like.</p>
+                <p>After pressing enter the section of the Kanban board you were working on will change, and a new task will be added.</p>
+                <p><img src="Images/ManagaementAndCollab/017.jpg" alt="An image showing the created issue added to the Kanban board" title="Created issue added"></p>
+                <p>Click on the name of the task and a new menu will appear which will give you several useful things you can add to your created task:</p>
+                <p><img src="Images/ManagaementAndCollab/018.jpg" alt="An image showing the Issue settings menu" title="issue settings menu"></p>
+                <p>There a several options for you here, including:</p>
+                <ul>
+                <li>Adding a description to your action, giving more information on what is needed for that task.</li>
+                <li>Setting the “Assignees” which are the people who are on the project (in this instance you might just have yourself, but in a team working scenario this could be any member of your team.)</li>
+                <li>Priority allows you to assign the job an importance level, which allows you to ensure that vital jobs are completed when they should be.</li>
+                <li>Size and estimate are both tools you can use to provide a ballpark figure about how long a job will take, size gives a selection of pre-made variants from XS-XL and estimate allows you to suggest any amount of time you like.</li>
+                <li>Start Date and End Date allows you to set start and end dates for this action – these could be suggested start and end dates or actual ones. It’s up to you for what works best with your workflow.</li>
+                </ul>
+                <p>All of these individual options can be accessed by clicking on the relevant sections.</p>
+                <p>When they are all set you may have something like this:</p>
+                <p><img src="Images/ManagaementAndCollab/019.jpg" alt="An image showing an issue with issue values set" title="Completed issue"></p>
+                <p>You will also notice that as you update these values in the wizard, the task on the kanban board will also update automatically:</p>
+                <p><img src="Images/ManagaementAndCollab/020.jpg" alt="An image showing a completed issue in the Kanban board" title="Completed Issue"></p>
+                <p>When you have set all of your parameters you can then convert your task to an issue (if you wish, you can leave it as a draft Kanban board task if you would like.)</p>
+                <p>To do this, hover over your task until the three dots appear and click on them, then click the convert to issue drop down that appears:</p>
+                <p><img src="Images/ManagaementAndCollab/021.jpg" alt="An image showing the convert to issue dropdown in the kanban board" title="Convert to Issue"></p>
+                <p>GitHub will then ask you what repository you want to make this issue a part of (you may have a project that covers multiple repositories). Select the current repository you are working on from the dropdown that appears:</p>
+                <p><img src="Images/ManagaementAndCollab/022.jpg" alt="An image showing a the choose a repository for an issue dialog" title="Choosing a repository"></p>
+                <p>The task will then update to tell you that the task is now an issue and the repository that it is attached to:</p>
+                <p><img src="Images/ManagaementAndCollab/023.jpg" alt="an image showing an issue with an attached repository" title="Issue with repository"></p>
+                <h4>Adding single Issues to a GitHub Repository</h4>
+                <p>You may also want to add issues directly into your GitHub repository or simulate what would happen if a user was reporting an issue, or feature request, for your project.</p>
+                <p>To do this, first return to your main repository screen and press the “issues” tab located in the top toolbar:</p>
+                <p><img src="Images/ManagaementAndCollab/001.jpg" alt="An image showing the main GitHub Repository Screen" title="GitHub Repository"></p>
+                <p>This will take you into the issues screen. The first thing you will see is that the issue we have just created is already there,</p>
+                <p>We are going to ignore this for now and select the “new issue” option in the top right corner of the window.</p>
+                <p><img src="Images/ManagaementAndCollab/024.jpg" alt="An image showing the issues screen inside of a repository" title="Issues Screen"></p>
+                <p>This will direct you to the new issue creation window, where you can enter the name and description of the issue you are facing:</p>
+                <p><img src="Images/ManagaementAndCollab/025.jpg" alt="An image showing the name and description screen for a new issue" title="Issues Screen"></p>
+                <p>On the right-hand side of the screen, you will notice that, like when creating an issue directly into our project there are a couple of options, the first one, Assignees should look familiar. In this instance click the “Assign yourself” option to make the current issue yours.</p>
+                <p>We are going to come back to labels later, so ignore them for now and click on the “projects” section.</p>
+                <p><img src="Images/ManagaementAndCollab/026.jpg" alt="An image showing adding a new issue to a project from the issues screen" title="Adding to projects"></p>
+                <p>Click on the project you have just created to assign your new issue to this project.</p>
+                <p>Then when you are done press the “submit new issue” button at the bottom of the page, and your issue is now created, and you will be directed to the issue management screen.</p>
+                <h4>Managing Issues</h4>
+                <p>Managing issues is an important part of development, especially when working collaboratively with others. Good issue management, alongside effective use of projects can help to ensure a project runs smoothly and can also prevent issues from arising.</p>
+                <p>The managing issues screen can be broken up into several sections, the first is the largest section – issue communication, which can be used to respond to issues.</p>
+                <h5>Responding to Issues:</h5>
+                <p><img src="Images/ManagaementAndCollab/027.jpg" alt="An image showing the issue timeline on GitHub" title="Issues Timeline"></p>
+                <p>This section of the issue window can be used for a variety of different reasons, you can use it to respond to users who have reported issues, or to report progress on issues for things that you have found.</p>
+                <p>To respond to an issue, write a comment in the box and then press the comment button to complete the process, the comment will then be added to the issue chain:</p>
+                <p><img src="Images/ManagaementAndCollab/028.jpg" alt="An image showing the issues timeline with a user response on GitHub" title="Issues Screen wit response"></p>
+                <p>This gives you the ability to freely communicate on any issue as needed!</p>
+                <h5>Labels</h5>
+                <p>On the right-hand side of the screen, underneath assignees, which you should be familiar with by now, you will see the term labels we skipped over previously.</p>
+                <p><img src="Images/ManagaementAndCollab/029.jpg" alt="An image of the label section of the create an issue page" title="Labels Section"></p>
+                <p>Labels give us the ability to categorise our issues, making organising them easier and also making specific issues easier to find.</p>
+                <p>Click on the labels button and a selection of commonly used labels will appear that you can assign to your Issue</p>
+                <p><img src="Images/ManagaementAndCollab/030.jpg" alt="An image showing the commonly used GitHub Labels" title="Common Labels"></p>
+                <p>However, for this demonstration we are going to create a new label – right click on the “edit labels” button at the bottom of the window and open it in a new tab.</p>
+                <p>This will redirect you to the GitHub labels screen:</p>
+                <p><img src="Images/ManagaementAndCollab/031.jpg" alt="An image showing the main GitHub labels screen" title="Labels Screen"></p>
+                <p>Press the green “new label” button at the top right-hand side of the screen and the label creation wizard will be displayed underneath it:</p>
+                <p><img src="Images/ManagaementAndCollab/032.jpg" alt="An image showing the GitHub label creation wizard" title="Label creation wizard"></p>
+                <p>Fill this window in with any information you like – I am going to create a “Project Management” label and make it orange.</p>
+                <p>For the colour section you can use any hex code to generate any custom colour you like – or just use the random button until you get a colour that is to your liking.</p>
+                <p>When your done and you creation wizard look similar to this you can click the create label button, this will add the label to the list you have available.</p>
+                <p><img src="Images/ManagaementAndCollab/033.jpg" alt="An image showing a newly created label" title="New Label"></p>
+                <p>Refresh your issues page and select labels again, you should be able to see your newly created label in the list:</p>
+                <p><img src="Images/ManagaementAndCollab/034.jpg" alt="An image showing the new label in the labels list" title="New Label added to list"></p>
+                <p>Select your newly created label and it will be added to your project, and your issue timeline will update:</p>
+                <p><img src="Images/ManagaementAndCollab/035.jpg" alt="An image showing the updated issue timeline with the new label added" title="New label issue timeline"></p>
+                <h5>Project Settings</h5>
+                <p>Underneath labels in the list you will see project settings. If you attached your project to the issue when you created it, you should see the name of the project, and if you press the down arrow next to the project name get a familiar list of options for your action:</p>
+                <p><img src="Images/ManagaementAndCollab/036.jpg" alt="An image showing the project settings from the new issue window" title="Project settings">
+                You can fill these sections in with information about your issue if you please, or you can leave them blank – it is up to you!</p>
+                <h5>Automatic Branch Creation</h5>
+                <p>You can also use the Issue management window to automatically create a branch that will relate to your issue. Which can be very useful if this is something you are sure you are going to work on.</p>
+                <p>To do this move down to the “Development” section of the issue window and choose the “create a new branch” link provided.</p>
+                <p><img src="Images/ManagaementAndCollab/037.jpg" alt="An image showing the create a new branch section of creating a new image" title="Creating a new branch"></p>
+                <p>This will open up the branch creation window. GitHub will attempt to automatically generate a name for you, you can stick with this or choose your own. GitHub will also automatically put it into the repository that the Issue it attached to, you can again change this if you wish.</p>
+                <p>Finally, it will give you the option to access this branch in one of several different ways, how you choose to do this is completely up to you – but I am going to leave checkout locally selected.</p>
+                <p><img src="Images/ManagaementAndCollab/038.jpg" alt="An image showing the issue branch creation screen" title="Issues branch creation"></p>
+                <p>When you are happy with your options press the “create” branch button, and your branch will be created and added to your repository, and the UI will update to show that the branch is attached to your current issue.</p>
+                <p><img src="Images/ManagaementAndCollab/039.jpg" alt="An image showing the new branch added to the issue" title="Branch added to an issue"></p>
+                <p>You can also use this feature to link issues to pull requests you make in development – though this is a slightly more advanced aspect of GitHub that is slightly out of the scope of this tutorial.</p>
+                <h5>Closing an Issue</h5>
+                <p>When an issue has been completed, you will need to mark it as completed inside of the action Window.</p>
+                <p>To do this write a comment as you normally would, but instead of pressing the standard “comment” button instead choose the “close with comment” button. Which, as the name suggests will close and issue with the comment you write.</p>
+                <p><img src="Images/ManagaementAndCollab/040.jpg" alt="An image showing the close issue with comment dialog box" title="Close with comment"></p>
+                <p>The issue you created has now been closed, and the UI will refresh to update this.</p>
+                <h3 id = "Features">Other GitHub Project Features</h3>
+                <p>Return to your GitHub project board, and you will notice that your recently created GitHub action has been automatically moved to the “done” section, this is GitHub Project Automation at work, which is something we are going to go into more detail on later, but for now we are going to focus more on the different features of the GitHub project window.</p>
+                <p>Most of these features are in the top toolbar of the GitHub Project toolbar window, and can be accessed simply by clicking them:</p>
+                <p><img src="Images/ManagaementAndCollab/041.jpg" alt="An image showing the GitHub project toolbar" title="Issues Screen"></p>
+                <h4>Free Movement of Issues</h4>
+                <p>Once you have created issues you are free to click and drag them to move around the Kanban board, this is especially useful for when you want to show that you are working on an issue, and helps the team know the status of all the various tasks.</p>
+                <p>To do this, simply choose an action you want to move and drag it to the location you want it to be:</p>
+                <p><img src="Images/ManagaementAndCollab/042.jpg" alt="An image showing the issues before dragging" title="Issues before dragging">
+                <img src="Images/ManagaementAndCollab/043.jpg" alt="An image showing the issues after dragging" title="Issues after dragging"></p>
+                <h4>Priority Board</h4>
+                <p>The priority board gives you a list of all of your tasks sorted by their priority. This is a great visual tool for ensuring that essential issues are sorted quickly, to prevent the project from being held up.</p>
+                <p><img src="Images/ManagaementAndCollab/044.jpg" alt="An image showing the issue priority board" title="Issues Priority Board"></p>
+                <h4>Team Items</h4>
+                <p>Team items breaks down currently assigned actions by team members, allowing you to see what tasks are still in progress by all of the different members of your team. It is also useful for re-assigning work from someone who may have too many tasks, preventing the project from falling behind.</p>
+                <p><img src="Images/ManagaementAndCollab/045.jpg" alt="An image showing the issue teams board" title="Issues Teams Board"></p>
+                <h4>Roadmap</h4>
+                <p>Roadmap provides you with a visual representation of when your Issues need to be completed by providing you with a timeline of their deadlines. This is a nice visual way of planning around your deadlines and ensuring that deadlines are met.</p>
+                <p><img src="Images/ManagaementAndCollab/046.jpg" alt="An image showing the issue roadmap board" title="Issues Roadmap Board"></p>
+                <p>My items</p>
+                <p>My items provides you with a breakdown of all of the individuals that you need to complete as part of the project, this can be very useful if you just want an easy to digest breakdown of the tasks you have left, helping you to stay on track.</p>
+                <p><img src="Images/ManagaementAndCollab/047.jpg" alt="An image showing the issue my items board" title="Issues My Items Board"></p>
+                <h3 id = "Automation">Automating a GitHub Project</h3>
+                <p>As mentioned previously, you closed the issue you created your project automatically moved it to the “done” section of your Kanban board. That is GitHub automation at work. When you create a Kanban board (or other projects) using GitHub projects there are several built in automations that GitHub provides you with.</p>
+                <p>It is possible to expand on these built-in automations using something called GitHub actions, but this is something that is more advanced, and requires you to learn a special markup language called YAML.</p>
+                <p>For this tutorial will we be using the in-built automations to complete some basic tasks, but if you feel like you would like to expand on this further, please do not hesitate to get in touch.</p>
+                <h4>Accessing Projects Automations</h4>
+                <p>To access GitHub projects built-in automations, select the three dots button that is visible at the top right of your project window, and select “workflows” to be relocated to the GitHub Project automations screen.</p>
+                <p><img src="Images/ManagaementAndCollab/048.jpg" class="image-fluid" alt="An image showing the automations screen being accessed from the Kanban board" title="Kanban board dropdown showing automations" ></p>
+                <p>From here you will be able to see a list of the automations that GitHub provides be default.</p>
+                <p><img src="Images/ManagaementAndCollab/049.jpg" alt="An image showing a list of the GitHUb provided automations" title="GitHub standard automations"></p>
+                <p>Down the left-hand side of the screen, you will see all of the inbuilt automations that GitHub provides and in the centre of the screen it will show what the automation does. In the example above it does what we discussed previously, when an issue it set to closed it is automatically set to done.</p>
+                <p>Feel free to click through each of the automations on the left-hand side to look at their behaviour, each of them will be slightly different but should give you a good idea of what each of them are attempting to achieve.</p>
+                <p>Workflows that do not have a green circle next to them are currently inactive, so will not currently fire based on your actions. If you wish to switch any of these workflows on click the switch that is visible on the top right of the workflow</p>
+                <p><img src="Images/ManagaementAndCollab/050.jpg" alt="An image showing the workflow switch" title="Workflow Switch"></p>
+                <p>When you are done return to the “item closed” action, we are now going to edit this to instead move to “In Review” instead of “Done” when an item is closed.</p>
+                <h4>Editing A Project Automation</h4>
+                <p>To edit the selected project automation, press the “Edit” button that is next to the on off switch at the top right-hand side of the workflow.</p>
+                <p>This will unlock the workflow and allow us to edit it. Press the drop-down menu underneath set value and you should see each of the individual sections of your Kanban board to choose from.</p>
+                <p><img src="Images/ManagaementAndCollab/051.jpg" alt="An image showing the edit value automation editor dropdown" title="Editor dropdown"></p>
+                <p>Select the “In Review” option to change it so closed issues go to the in review section of the Kanban board, the UI should update to show this.</p>
+                <p><img src="Images/ManagaementAndCollab/052.jpg" alt="An image showing the workflow when it has been changed" title="Changed workflow"></p>
+                <p>When this is the case navigate back to the top right-hand side of the screen and press the “save and turn on workflow” button.</p>
+                <p><img src="Images/ManagaementAndCollab/053.jpg" alt="An image showing the save button to alter a workflow" title="Save a changed workflow"></p>
+                <p>And there you go! Your workflow is now updated. You can test it if you wish by creating and closing another issue, and once again checking your completed Kanban board.</p>
+                <p>These are only simple automations, but when you are just getting started these are most likely all you will need, as you begin to be more experienced with GitHub and programming in general you may find that you have more bespoke reasons for automation, which is when you should begin to look into CICD and GitHub actions.</p>
+
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

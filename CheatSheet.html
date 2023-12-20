@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-12">
+                <h1>UOH Computer Science: GitHub Basics Tutorial</h1>
+            </div>
+        </header>
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="UsingGitHub.html">Using GitHub</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="UsingGitHub.html#About">What is GitHub?</a></li>
+                                <li class="nav-item"><a class="nav-link" href="UsingGitHub.html#Account">Creating a GitHub Account</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubConcepts.html">GitHub Concepts</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Repository">Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Commits">Commit(s)</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Remote">Remote Repositories</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Branching">Branching</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Merging">Merging</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Conflicts">Conflicts</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Cloning">Cloning</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#FandP">Fetching and Pulling</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Push">Push</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubConcepts.html#Stashing">Stashing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubDesktop.html">GitHub Desktop Tutorial</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Setup">GitHub Desktop Setup</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#CreateRepo">Creating a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#AccessRepo">Accessing a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#ChangeRepo">Changing a Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#TrackChanges">Tracking Repository Changes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Branching">Branching in GitHub Desktop</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubDesktop.html#Merging">Merging in GitHub Desktop</a></li>                                
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GitHubCmd.html">GitHub Command Line Tutorial</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#Terminal">Opening the Terminal</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#Install">Installing GIT</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#CreateRepo">Creating a Repository on GitHub</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#PushRepo">Pushing to a GitHub Repository</a></li>
+                                <li class="nav-item"><a class="nav-link" href="GitHubCmd.html#BandM">Branching and Merging</a></li>
+                                <li class="nav-item"><a class="nav-link" href="CheatSheet.html">Cheat Sheet</a></li>                                 
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Conflicts.html">Conflicts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ManagementAndCollab.html">Project Management and Collaboration</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Collab">Collaboration</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Projects">Using GitHub Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#AddItem">Adding Items To A Projet</a></li>      
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Issues">Issues</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Features">Other GitHub Project Mangement Features</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ManagementAndCollab.html#Automation">Automating A GitHub Project</a></li>                        
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1>GitHub Command Line Cheat Sheet</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <button class="btn btn-sm btn-outline-secondary" id="toggleTheme">Toggle Light/Dark Mode</button>
+                    </div>
+                </div>
+                <p class = "alert alert-danger" role="alert"><strong>Note: </strong>anything inside of “[]” symbols should be altered to your use case without the symbols. E.G. “git branch [branch name]” would be “git branch FeatureABranch” in the command line.</p>
+                <!-- Add more content as needed -->
+                <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col">Command</th>
+                    <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Initialising and Cloning Repositories</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git init</code></th>
+                        <td>Initialise a new GIT repository in your current working directory</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git clone [address to repo]</code></th>
+                        <td>Clone a remote repository to your device using its URL</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Committing</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git status</code></th>
+                        <td>Check the current status of any changes to the repository.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git add [file or directory]</code></th>
+                        <td>Sets the provided file or directory to be committed.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git add .</code></th>
+                        <td>Sets all files in the current directory to be committed.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git commit -m "Commit Message Here"</code></th>
+                        <td>Commits all added changes to the repository.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Branching</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git branch</code></th>
+                        <td>lists all of the local branches.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git branch [branch name]</code></th>
+                        <td>Creates a new branch.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git switch [branch name]</code></th>
+                        <td>Swaps to a specific branch</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><p class = "alert alert-warning" role="alert">Some versions of GIT may use <code>git checkout [branch name]</code> instead.</p></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Merging</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git merge [branch name]</code></th>
+                        <td>Merges the current branch into the repository</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>Remote Repositories</code></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git remote add [name] [address to repo]</code></th>
+                        <td>Add a new remote repository</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git push [remote name] [branch name]</code></th>
+                        <td>Push changes to a remote repository</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git pull [remote name] [branch name]</code></th>
+                        <td>Pull changes from a remote repository</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git fetch[remote name]</code></th>
+                        <td>Fetch changes from a remote repository without completing a merge</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Stashing</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git stash save "Message Here"</code></th>
+                        <td>Stash your changes</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git stash list</code></th>
+                        <td>List all stashes</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git stash apply</code></th>
+                        <td>Apply the latest stashed changes</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git stash drop</code></th>
+                        <td>Drop the latest stash</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git stash branch [branch name]</code></th>
+                        <td>Create a branch from a stash</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Misc.</th>
+                        <td>Drop the latest stash</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>git log</code></th>
+                        <td>View the history of a repositories previous commits.</td>
+                    </tr>
+                </tbody>
+                </table>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
